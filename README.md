@@ -23,13 +23,13 @@ GitHub からインストールし、`C-M-=` に変換キーを割り当てる�
 ### use-package (Elpaca) の場合
 ```lisp
 (use-package year-convert
-  :elpaca (year-convert :url "[https://github.com/ichibeikatura/year-convert](https://github.com/ichibeikatura/year-convert)")
+  :ensure (year-convert :url "https://github.com/ichibeikatura/year-convert")
   :bind ("C-M-=" . year-convert-at-point))
 ```
 
 ### leaf の場合
 ```lisp
 (leaf year-convert
-  :elpaca (year-convert :url "[https://github.com/ichibeikatura/year-convert](https://github.com/ichibeikatura/year-convert)")
+  :elpaca (year-convert :url "https://github.com/ichibeikatura/year-convert")
   :bind ("C-M-=" . year-convert-at-point))
 ```
