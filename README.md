@@ -16,3 +16,20 @@
 
 変換したい年の上にカーソルを置き、設定したコマンド（例: `M-x year-convert-at-point`）を実行するだけです。
 
+## 設定例
+
+GitHub からインストールし、`C-M-=` に変換キーを割り当てる設定例です。
+
+### use-package (Elpaca) の場合
+```lisp
+(use-package year-convert
+  :elpaca (year-convert :url "[https://github.com/ichibeikatura/year-convert](https://github.com/ichibeikatura/year-convert)")
+  :bind ("C-M-=" . year-convert-at-point))
+```
+
+### leaf の場合
+```lisp
+(leaf year-convert
+  :elpaca (year-convert :url "[https://github.com/ichibeikatura/year-convert](https://github.com/ichibeikatura/year-convert)")
+  :bind ("C-M-=" . year-convert-at-point))
+```
